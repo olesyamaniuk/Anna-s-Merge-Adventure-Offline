@@ -112,8 +112,8 @@ a {
   z-index: 5;
   background: transparent;
   display: flex;
-  height: 80px;
-  background: transparent;
+  height: 76px;
+  background: #0f7422;
 }
 .header__background {
   position: absolute;
@@ -125,7 +125,7 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  background: #fafafa;
+  background: #0f7422;
 }
 .header.is-open .header__background {
   left: 0;
@@ -176,7 +176,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 16px;
+  padding: 9px 11px;
   position: relative;
 }
 
@@ -199,8 +199,8 @@ a {
   padding: 0px 32px;
 
   border-radius: 0px 0px;
-  gap: 48px;
-  background: #fafafa;
+  gap: 32px;
+  background: #0f7422;
 }
 .navigation__list.is-open {
   right: 0;
@@ -209,13 +209,13 @@ a {
   font-family: Inter;
   font-size: 16px;
   font-weight: 500;
-  line-height: 18.75px;
+  line-height: 19.36px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
   text-decoration: none;
-  color: rgba(92, 0, 0, 1);
+  color: #fff7d8;
 }
 
 .header.is-open {
@@ -225,8 +225,8 @@ a {
   display: none;
 }
 .header-title {
-  width: 278px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -237,14 +237,15 @@ a {
     display: none;
   }
   .header-title {
-    width: 376px;
-    height: 64px;
-    margin-right: 80px;
+    width: 60px;
+    height: 60px;
+
+    margin-right: 400px;
   }
   .header {
     width: 100%;
 
-    height: 90px;
+    height: 80px;
     padding: 10px 20px 10px 0;
     display: flex;
     align-items: center;
@@ -280,7 +281,7 @@ a {
 
     padding-block: 0;
     flex: 1;
-    gap: 30px;
+    gap: 32px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -290,16 +291,16 @@ a {
   .navigation__link {
     display: flex;
     width: auto;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24.38px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
     text-decoration: none;
-    color: rgba(250, 250, 250, 1);
+    color: #fff7d8;
   }
   .navigation__link:hover,
   .navigation__link:focus {
@@ -559,7 +560,7 @@ a {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    padding: 0px 0 1px;
+    padding: 0px 0 16px;
   }
   .play-text {
     font-family: Inter;
@@ -656,6 +657,7 @@ a {
   }
 
   .gallery__list {
+    padding-top: 56px;
     width: 1340px;
   }
 }
@@ -670,7 +672,7 @@ a {
 }
 .features-item {
   width: 345px;
-
+  height: 463px;
   border-radius: 28px;
   background: #f7d8a9;
   border: 2px solid #fcc86f;
@@ -709,7 +711,7 @@ a {
   .features {
     width: 1440px;
 
-    padding: 120px 86px 0;
+    padding: 120px 68px 0;
     margin: auto;
   }
   .features-list {
@@ -718,7 +720,9 @@ a {
   }
   .features-item {
     width: 416px;
+    height: 564px;
   }
+
   .features-img {
     width: 410px;
     height: 416px;
@@ -834,6 +838,80 @@ a {
   }
 }
 
+.gallery-diary {
+  width: 375px;
+  height: 345px;
+  margin: 65px auto 100px;
+  padding: 25px 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/image/gallery-diary/special.png");
+}
+.gallery-diary-title {
+  width: 211px;
+  height: 37px;
+}
+.gallery-diary__list {
+  width: 345px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+.gallery-diary__item {
+  width: 345px;
+  height: 243px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 12px;
+}
+
+.gallery-diary__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-diary {
+    width: 1440px;
+    height: 884px;
+
+    margin: 0px auto 120px;
+    padding: 56px 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/image/gallery-diary/special\ \(1\).png");
+  }
+  .gallery-diary-title {
+    width: 387px;
+    height: 55px;
+  }
+  .gallery-diary__list {
+    width: 1076px;
+
+    padding-top: 24px;
+    padding-bottom: 20px;
+    margin: auto;
+  }
+  .gallery-diary__item {
+    width: 1076px;
+    height: 647px;
+
+    overflow: hidden;
+    position: relative;
+    margin: 0 12px;
+  }
+
+  .gallery-diary__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
 .footer {
   background: #8748b9;
 
